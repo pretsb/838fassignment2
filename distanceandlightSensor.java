@@ -10,6 +10,8 @@ import java.util.Enumeration;
 
 public class distanceandlightSensor implements SerialPortEventListener {
 
+	//Arduino interfacing code from http://arduino.cc/playground/Interfacing/Java
+	
 	SerialPort serialPort;
 	/** The port we're normally going to use. */
 	private static final String PortName = "COM10";
@@ -22,7 +24,7 @@ public class distanceandlightSensor implements SerialPortEventListener {
 	/** Default bits per second for COM port. */
 	private static final int DATA_RATE = 9600;
 
-	JFrame frame = new JFrame("Menu");
+	JFrame frame = new JFrame("Welcome Screen");
 	JPanel panel = new JPanel(); // the panel is not visible in output
 	JTextArea ta = new JTextArea();
 
